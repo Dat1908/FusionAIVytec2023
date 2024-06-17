@@ -1,0 +1,85 @@
+/* Đặt màu nền chung cho trang web */
+body {
+    background-color: #f0f4f8;
+    color: #333;
+    font-family: 'Helvetica', 'Arial', sans-serif;
+}
+
+/* Định dạng cho tiêu đề chính */
+h1 {
+    color: #5b9aa0; /* Màu xanh pastel nhẹ */
+    text-align: center;
+}
+
+/* Định dạng cho tiêu đề bài viết */
+.entry-title {
+    color: #d6a4a4; /* Màu hồng pastel */
+}
+
+/* Định dạng cho nội dung bài viết */
+.entry-content {
+    padding: 20px;
+    line-height: 1.6;
+}
+
+/* Định dạng cho các đoạn văn có class 'contrast' và 'morning-breeze' */
+.contrast, .morning-breeze {
+    background-color: #eae6ef; /* Màu nền nhẹ cho blockquote */
+    border-left: 5px solid #d1d1e0; /* Dải màu bên cạnh blockquote */
+    padding: 15px;
+    margin: 20px 0;
+    color: #666;
+}
+
+/* Định dạng cho các hình ảnh trong nội dung */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 8px; /* Bo góc cho hình ảnh */
+}
+
+/* Định dạng cho footer */
+.footer {
+    background-color: #dbe9d8; /* Màu nền pastel cho footer */
+    padding: 20px;
+    text-align: center;
+}
+
+/* Nút quay lại trang chủ */
+.back_home_button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #b2c2bf; /* Màu pastel nhẹ */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.back_home_button:hover {
+    background-color: #9db4b0; /* Màu khi hover */
+}
+
+/* Định dạng cho header và các phần tử bên trong */
+.site-header {
+    background-color: #e8eff5; /* Màu nền cho header */
+    padding: 20px 0;
+}
+
+.title-area {
+    text-align: center;
+}
+
+.site-title {
+    margin: 0;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .entry-content, .footer {
+        padding: 10px;
+    }
+}

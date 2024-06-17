@@ -1,0 +1,266 @@
+/* Reset padding and margin to remove any browser default spacing */
+html, body {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
+
+/* Set up the body with the desired font, background, and text color */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #8c8c8c;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    overflow-x: hidden; /* Changed from 'scroll' to 'hidden' to prevent unnecessary scrollbars */
+}
+
+/* Style the header with transparency and uppercase text */
+.header {
+    background-color: rgba(0, 0, 0, 0.3);
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: large;
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+
+
+/* Info class for any informational text */
+.info {
+    text-align: left;
+    color: gray;
+    width: 30%;
+    margin: auto;
+    padding: 20px;
+    font-size: 14px;
+}
+
+/* Ensure the content takes full width */
+.content {
+    width: 100%;
+}
+
+/* Style the upload section with transparency */
+.upload_part {
+    background-color: rgba(0, 0, 0, 0.3);
+    text-align: center;
+    padding: 40px;
+}
+
+/* Style the upload button with a shadow for depth */
+.upload_button {
+    background-color: #FEED06; /* Bright yellow for visibility */
+    color: black;
+    padding: 15px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 6px 8px 18px -5px rgba(0, 0, 0, 0.38);
+    cursor: pointer;
+}
+
+/* Style hints under the upload button */
+.upload_hint {
+    margin: 10px;
+    font-size: 14px;
+    color: rgb(200, 200, 200);
+}
+
+/* Center result part and add padding */
+.result_part {
+    text-align: center;
+    padding: 40px;
+}
+
+/* Bold and larger font for result titles */
+.result_title {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Style for result IDs */
+.result_id {
+    padding: 10px;
+    margin: 15px;
+    font-size: 16px;
+}
+
+/* Highlighted result number with yellow background */
+.result_id_number {
+    margin: 15px;
+    padding: 10px;
+    background-color: #FEED06; /* Matching yellow */
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+/* Back home button with a transition effect */
+.back_home_button {
+    display: inline-block;
+    padding: 10px 15px;
+    margin-top: 5px; /* Adjusted for consistency */
+    background-color: #007bff; /* Blue background for contrast */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+/* Hover effect for back home button */
+.back_home_button:hover {
+    background-color: #0056b3; /* Darker shade of blue on hover */
+}
+
+body {
+    padding: 0px;
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    color:white;
+}
+
+body, html {
+          height: 100%;
+        }
+    html, body {
+        padding: 0px;
+        margin: 0px;
+        background-color: #A28071;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100%;
+        overflow-x: scroll;
+    }
+
+.header {
+    background-color: rgba(0, 0, 0, 0.3);
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 40px;
+    color:white;
+
+    text-align: center;
+    padding: 30px;
+}
+
+/* Add this to your personal_color.css file */
+
+.back_home_button {
+display: inline-block; /* Allows you to set dimensions */
+padding: 10px 15px; /* Size of the padding inside the button */
+margin: 5px 0; /* Space around the button */
+background-color: #584906; /* The background color of the button */
+color: white; /* The text color */
+text-decoration: none; /* Removes the underline from links */
+border-radius: 5px; /* Rounds the corners of the button */
+font-weight: bold; /* Makes the text bold */
+transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+position: absolute;
+top: 3%;
+left: 2%;
+
+}
+
+form button {
+display: inline-block; /* Allows you to set dimensions */
+padding: 10px 15px; /* Size of the padding inside the button */
+margin: 5px 0; /* Space around the button */
+background-color: #584906; /* The background color of the button */
+color: white; /* The text color */
+text-decoration: none; /* Removes the underline from links */
+border-radius: 5px; /* Rounds the corners of the button */
+font-weight: bold; /* Makes the text bold */
+transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+
+}
+
+form button:hover {
+background-color: #392f05; /* Color when the mouse hovers over the button */
+text-decoration: none; /* Ensures the underline does not re-appear on hover */
+color: white; /* Text color remains white on hover */
+
+}
+
+.back_home_button:hover {
+background-color: #392f05; /* Color when the mouse hovers over the button */
+text-decoration: none; /* Ensures the underline does not re-appear on hover */
+color: white; /* Text color remains white on hover */
+}
+
+
+.info
+{
+    text-align:left;
+    color:gray;
+    width:30%;
+    margin:auto;
+    padding:20px;
+    font-size:14px;
+}
+
+
+.content {
+    width: 100%;
+}
+
+.upload_part {
+    background-color: rgba(0, 0, 0, 0.3);
+    text-align: center;
+    padding: 40px;
+}
+
+.upload_button {
+    background-color: #907124;
+    color: black;
+    padding: 15px;
+    font-size: 16px;
+    border: 0px;
+    border-radius: 5px;
+    -webkit-box-shadow: 6px 8px 18px -5px rgba(0, 0, 0, 0.38);
+    -moz-box-shadow: 6px 8px 18px -5px rgba(0, 0, 0, 0.38);
+    box-shadow: 6px 8px 18px -5px rgba(0, 0, 0, 0.38);
+    cursor: pointer;
+}
+
+.upload_hint {
+    margin: 10px;
+    font-size: 14px;
+    color: rgb(200, 200, 200);
+}
+
+.result_part {
+    text-align: center;
+    padding: 40px;
+}
+
+.result_title {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.result_id {
+    padding: 10px;
+    margin: 15px;
+    font-size: 16px;
+
+}
+
+.result_id_number {
+    margin: 15px;
+    padding: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: #FEED06;
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 5px;
+
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Body Shape</title>
+    <link rel="stylesheet" type="text/css" href="static\css\body_shape.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+</head>
+
+<body>
+    <h1>Body Shape</h1>
+
+    <form action="/body_shape" method="POST" enctype="multipart/form-data" id='form'>
+        <input type="text" name="Bust" id="bust" placeholder="Bust">
+        <input type="text" name="Waist" id="waist" placeholder="Waist">
+        <input type="text" name="Hip" id="hip" placeholder="Hip">
+        <button type="submit">Kiểm tra</button>
+    </form>
+
+    <div class='result_part'>
+        <!-- Phần mã này giả định bạn đang sử dụng một template engine để hiển thị dữ liệu -->
+        {% if body_shape != 'Invalid measurements' %}
+        {% if msg %}
+        <div class='result_title'><b>Kết quả nhận diện</b></div>
+        <div class='result_id'>{{ msg }}</div>
+        {% if body_shape %}
+        <div class='result_id'>Nhận diện được: <span class='result_label'>{{ body_shape }}</span></div>
+        {% set body_shape_ = body_shape.replace(" ", "_") | lower %}
+        <form action="/body_shape/{{body_shape_}}" method="GET">
+            <button>Xem thêm về màu {{ body_shape}}</button>
+        </form>
+
+        {% endif %}
+        {% endif %}
+        {% else %}
+        <div class='result_id'>Không thể nhận diện, vui lòng nhập số đo chính xác.</div>
+        {% endif %}
+
+    </div>
+
+    <script src="static\js\body_shape.js"></script>
+
+    <div class='footer'>
+        <a href="/" class="back_home_button">Back to Home</a>
+
+    </div>
+</body>
+
+</html>
