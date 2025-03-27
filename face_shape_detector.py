@@ -10,7 +10,7 @@ from timeit import default_timer
 device = 'cpu'
 classes = ['Heart', 'Oblong', 'Oval', 'Round', 'Square']
 
-def load_face_model(weight_path='D:\modelvytec\shape_face.pth'):
+def load_face_model(weight_path="D:/modelvytec/shape_face.pth"):
     weights = torch.load(weight_path, map_location=torch.device('cpu'))
     model = torchvision.models.efficientnet_b4()
     model.classifier = nn.Linear(model.classifier[1].in_features, len(classes))
@@ -65,5 +65,5 @@ def main():
     # end = default_timer()
     # print(f"Predict time: {end - start:.2f} seconds")
     
-if __name__ == '__main__':
-    main()
+# if __name__ == '__main__':
+    # main()

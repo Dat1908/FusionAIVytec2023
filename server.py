@@ -47,7 +47,7 @@ def face_shape_func():
             image = request.files['file']
             if image:
                 # Lưu file3
-                path_to_save = os.path.join(app.config['UPLOAD_FOLDER'], 'D:\Python\FusionAIVytec2023\image_get' + image.filename)
+                path_to_save = os.path.join(app.config['UPLOAD_FOLDER'], 'static/' + image.filename)
                 # app.config['UPLOAD_FOLDER'] = r"D:/Python/FusionAIVytec2023/static/"  # Dùng 'r' để tránh lỗi escape sequence
 
                 # # Tạo thư mục nếu chưa có
@@ -142,7 +142,7 @@ def personal_color_func():
             image = request.files['file']
             if image:
                 # Lưu file
-                path_to_save = os.path.join(app.config['UPLOAD_FOLDER'], 'D:\Python\FusionAIVytec2023\image_get' + image.filename)
+                path_to_save = os.path.join(app.config['UPLOAD_FOLDER'], 'static/' + image.filename)
                 # # Định nghĩa thư mục lưu file
                 # app.config['UPLOAD_FOLDER'] = r"D:/Python/FusionAIVytec2023/static/"  # Dùng 'r' để tránh lỗi escape sequence
 
